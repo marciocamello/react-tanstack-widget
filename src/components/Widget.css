@@ -1,0 +1,115 @@
+/* Widget base styling */
+.react-tanstack-widget {
+  /* Base styling */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Default theme */
+.theme-default {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-family:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Custom theme will use inline styles defined in Widget.tsx */
+.theme-custom {
+  /* The CSS variables will be set via inline styles */
+}
+
+/* Widget components styling */
+.widget-container {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.widget-content {
+  width: 100%;
+}
+
+.loading-state {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #666;
+}
+
+.error-state {
+  padding: 20px;
+  color: #e74c3c;
+  text-align: center;
+}
+
+.home-page h1,
+.details-page h1 {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.home-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home-page li {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.home-page a,
+.details-page a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home-page a:hover,
+.details-page a:hover {
+  text-decoration: underline;
+}
+
+.details-content {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.navigation {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+/* Apply custom text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+/* Custom fonts */
+.font-custom {
+  font-family: var(--font-family);
+}
+
+/* Loading state animations */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

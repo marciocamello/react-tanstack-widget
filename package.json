@@ -1,6 +1,6 @@
 {
   "name": "react-tanstack-widget",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React widget using TanStack Router and TanStack Query",
   "type": "module",
   "private": false,

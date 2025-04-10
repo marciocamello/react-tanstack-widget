@@ -24,6 +24,38 @@ or
 yarn add react-tanstack-widget
 ```
 
+### Requirements
+
+**Important**: This widget uses Tailwind CSS for styling. To use this widget in your application, you need to:
+
+1. Install Tailwind CSS in your host application:
+
+```bash
+npm install tailwindcss
+```
+
+2. Configure Tailwind in your project:
+
+```bash
+npx tailwindcss init
+```
+
+3. Make sure your Tailwind configuration includes the widget's styles:
+
+```js
+// tailwind.config.js
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/react-tanstack-widget/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
 ## Usage
 
 ### Basic Usage
